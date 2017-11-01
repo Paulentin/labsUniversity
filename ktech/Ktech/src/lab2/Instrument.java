@@ -5,14 +5,22 @@ import java.math.BigInteger;
 import java.util.Comparator;
 
 public abstract class Instrument implements Comparable{
-    int price;
-
-    void play(){}
+    public int price;
+    private String modelName;
+    public void play(){}
 
     @Override
     public int compareTo(Object o) {
         Instrument ob= (Instrument) o;
         return (int) (this.price-ob.price);
+    }
+
+    public String getModelName() {
+        return modelName;
+    }
+
+    public void setModelName(String modelName) {
+        this.modelName = modelName;
     }
 }
 
@@ -46,11 +54,6 @@ public abstract class Instrument implements Comparable{
      }
 
 
-     @Override
-     public int compareTo(Object o) {
-         Keyboard ob= (Keyboard) o;
-         return (int) (this.price-ob.price);
-     }
  }
  abstract class Stringed extends Instrument {
 

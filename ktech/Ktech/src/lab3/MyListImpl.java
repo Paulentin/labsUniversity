@@ -13,8 +13,8 @@ public class MyListImpl implements IMyList {
     protected int modCount = 0;
 
     int size;
-    MyListImpl.Node first;
-    MyListImpl.Node last;
+    private MyListImpl.Node first;
+    private MyListImpl.Node last;
 
     public MyListImpl(){
         this.size=0;
@@ -89,12 +89,12 @@ public class MyListImpl implements IMyList {
     }
 
     @Override
-    public Object[] toArray() {
-        Object[] var1 = new Object[this.size];
+    public Instrument[] toArray() {
+        Instrument[] var1 = new Instrument[this.size];
         int var2 = 0;
 
         for(MyListImpl.Node var3 = this.first; var3 != null; var3 = var3.next) {
-            var1[var2++] = var3.item;
+            var1[var2++] = (Instrument) var3.item;
         }
         return var1;
     }
@@ -107,42 +107,27 @@ public class MyListImpl implements IMyList {
     public int indexOf(Object var1) {
         int var2 = 0;
         MyListImpl.Node var3;
-        if (var1 == null) {
-            for(var3 = this.first; var3 != null; var3 = var3.next) {
-                if (var3.item == null) {
-                    return var2;
-                }
-
+        if (var1 == null) for(var3 = this.first; var3 != null; var3 = var3.next) {
+                if (var3.item == null) return var2;
                 ++var2;
-            }
-        } else {
-            for(var3 = this.first; var3 != null; var3 = var3.next) {
-                if (var1.equals(var3.item)) {
-                    return var2;
-                }
-
-                ++var2;
-            }
         }
-
+        else for(var3 = this.first; var3 != null; var3 = var3.next) {
+                if (var1.equals(var3.item)) return var2;
+                ++var2;
+        }
         return -1;
     }
 
     @Override
     public boolean remove() {
-        if(this.removeFirst()!=null){
-            return true;
-        }
+        if(this.removeFirst()!=null)return true;
         return false;
     }
 
     public Instrument removeFirst() {
         MyListImpl.Node var1 = this.first;
-        if (var1 == null) {
-            throw new NoSuchElementException();
-        } else {
-            return this.unlinkFirst(var1);
-        }
+        if (var1 == null) throw new NoSuchElementException();
+        else return this.unlinkFirst(var1);
     }
 
     private Instrument unlinkFirst(MyListImpl.Node<Instrument> var1) {
@@ -151,12 +136,8 @@ public class MyListImpl implements IMyList {
         var1.item = null;
         var1.next = null;
         this.first = var3;
-        if (var3 == null) {
-            this.last = null;
-        } else {
-            var3.prev = null;
-        }
-
+        if (var3 == null) this.last = null;
+        else var3.prev = null;
         --this.size;
         ++this.modCount;
         return var2;
