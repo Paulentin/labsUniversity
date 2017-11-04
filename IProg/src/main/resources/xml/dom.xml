@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<hotel xmlns="http://nure.ua/zabara/hotel">
+    <room id="1">
+        <stars>5</stars>
+        <staffAmount>3</staffAmount>
+        <barFridge>false</barFridge>
+        <price>0.0</price>
+    </room>
+    <room id="2">
+        <stars>3</stars>
+        <staffAmount>2</staffAmount>
+        <barFridge>false</barFridge>
+        <price>0.0</price>
+    </room>
+    <room id="3">
+        <rented>
+            <name>Pavlo Zabara</name>
+            <telNumber>+380660219830</telNumber>
+            <dateStart>1970-01-01</dateStart>
+            <dateEnd>1970-01-01</dateEnd>
+        </rented>
+        <stars>5</stars>
+        <staffAmount>2</staffAmount>
+        <barFridge>false</barFridge>
+        <price>0.0</price>
+    </room>
+</hotel>
