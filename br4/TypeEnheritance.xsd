@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://www.example.org/TypeEnheritance"
+	xmlns:tns="http://www.example.org/TypeEnheritance" 
+	elementFormDefault="qualified">
+
+	<complexType name="Base">
+		<sequence>
+			<element name="name" type="string" />
+			<element name="type" type="string" />
+		</sequence>
+	</complexType>
+
+	<complexType name="Child">
+		<complexContent>
+			<extension base="tns:Base">
+				<sequence>
+					<element name="description" type="string" />
+				</sequence>
+			</extension>
+		</complexContent>
+
+	</complexType>
+
+	<element name="root">
+		<complexType>
+			<sequence>
+				<element name="base" type="tns:Base" maxOccurs="unbounded"/>
+			</sequence>
+		</complexType>
+	</element>
+</schema>

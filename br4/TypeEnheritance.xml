@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:root xmlns:tns="http://www.example.org/TypeEnheritance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/TypeEnheritance TypeEnheritance.xsd ">
+  <tns:base xsi:type="tns:Base">
+    <tns:name>tns:name</tns:name>
+    <tns:type>tns:type</tns:type>
+  </tns:base>
+  <tns:base xsi:type="tns:Child">
+    <tns:name>tns:name</tns:name>
+    <tns:type>tns:type</tns:type>
+    <tns:description>tns:description></tns:description>
+  </tns:base>
+</tns:root>
