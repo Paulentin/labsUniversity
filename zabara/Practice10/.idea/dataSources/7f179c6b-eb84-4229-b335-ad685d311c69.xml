@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="mydb@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="mydb">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="Elective"/>
+    <schema id="4" parent="1" name="information_schema"/>
+    <schema id="5" parent="1" name="mysql"/>
+    <schema id="6" parent="1" name="performance_schema"/>
+    <schema id="7" parent="1" name="practiceDB"/>
+    <schema id="8" parent="1" name="sakila"/>
+    <schema id="9" parent="1" name="sanatoriumdb"/>
+    <schema id="10" parent="1" name="shopping"/>
+    <schema id="11" parent="1" name="sys"/>
+    <schema id="12" parent="1" name="tryElective"/>
+    <schema id="13" parent="1" name="WatchShop"/>
+    <table id="14" parent="2" name="role"/>
+    <table id="15" parent="2" name="users"/>
+    <column id="16" parent="14" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="17" parent="14" name="name">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <key id="18" parent="14" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="19" parent="15" name="login">
+      <Position>1</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="20" parent="15" name="password">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="21" parent="15" name="roleId">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="22" parent="15" name="fk_users_table1_idx">
+      <ColNames>roleId</ColNames>
+    </index>
+    <key id="23" parent="15" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>login</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="24" parent="15" name="fk_users_table1">
+      <ColNames>roleId</ColNames>
+      <RefSchemaName>mydb</RefSchemaName>
+      <RefTableName>role</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+  </database-model>
+</dataSource>

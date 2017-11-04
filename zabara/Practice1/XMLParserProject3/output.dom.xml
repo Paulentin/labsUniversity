@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<weapons>
+<knife id="id1">
+<type>true</type>
+<handy/>
+<visual>
+<length/>
+<width/>
+<handle/>
+<bloodsink/>
+</visual>
+</knife>
+<knife id="id2">
+<type>false</type>
+<handy/>
+<visual>
+<length/>
+<width/>
+<handle/>
+<bloodsink/>
+</visual>
+</knife>
+<knife id="id3">
+<type>true</type>
+<handy/>
+<visual>
+<length/>
+<width/>
+<handle/>
+<bloodsink/>
+</visual>
+</knife>
+<knife id="id4">
+<type>true</type>
+<handy/>
+<visual>
+<length/>
+<width/>
+<handle/>
+<bloodsink/>
+</visual>
+</knife>
+</weapons>

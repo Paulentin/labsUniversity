@@ -1,0 +1,76 @@
+package ua.nure.zabara.Practice5;
+
+import java.io.FileOutputStream;
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
+public class Part4 {
+	
+	public static void main(String[] args) {
+
+		//Set array
+		int [][]a = new int[4][100];
+		for (int i = 0; i < 4; i++) {
+			for (int j = 0; j < 100; j++) {
+				a[i][j]=i+j;
+
+			}
+		}
+
+
+		//get array of threads
+		FinderMax[] f=new FinderMax[4];
+		for (int j = 0; j < f.length ; j++) {
+			f[j]=new FinderMax(a[j]);
+			f[j].start();
+		}
+
+		//wait for ending
+		for (int j = 0; j <f.length ; j++) {
+			try {
+				f[j].join();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+
+		//initializing array of maxes
+		int [] arrOfMax=new int[4];
+		for (int i = 0; i < arrOfMax.length; i++) {
+			arrOfMax[i]=f[i].max;
+		}
+		//getting max value
+		FinderMax fMax=new FinderMax(arrOfMax);
+		fMax.start();
+		try {
+			fMax.join();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		System.out.println(fMax.max);
+
+	}
+
+}
+class FinderMax extends Thread{
+
+	int []mat;
+	int max;
+	FinderMax(int [] mat){
+		this.mat=mat;
+	}
+	public void run(){
+		max=0;
+
+		for (int i = 0; i < mat.length; i++) {
+			if (mat[i]>max){
+				max=mat[i];
+			}
+		}
+		try {
+			Thread.sleep(1);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+}

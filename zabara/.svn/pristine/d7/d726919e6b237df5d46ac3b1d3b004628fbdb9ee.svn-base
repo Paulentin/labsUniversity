@@ -1,0 +1,29 @@
+package ua.nure.zabara.Practice3;
+
+
+import com.sun.xml.internal.ws.util.StringUtils;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Part3
+{
+    public Part3() {}
+
+    public static String convert(String input)
+    {
+        Pattern p = Pattern.compile("\\w*\\s");
+        Matcher m = p.matcher(input);
+        StringBuilder sb = new StringBuilder();
+
+        while (m.find()) {
+            sb.append(StringUtils.capitalize(m.group()));
+        }
+        return sb.toString();
+    }
+
+    public static void main(String[] args) {
+        String input = Util.readFile("part3.txt");
+        System.out.println(convert(input));
+    }
+}

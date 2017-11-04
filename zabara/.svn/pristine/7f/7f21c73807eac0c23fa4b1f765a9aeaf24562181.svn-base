@@ -1,0 +1,70 @@
+package ua.nure.zabara.Practice1;
+
+import java.util.ArrayList;
+
+/**
+ * Created by dobro on 6/27/17.
+ */
+public class Part5 {
+    private static String dictionary = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+
+    public static int str2int(String number) {
+
+        int result = 0;
+        int index;
+        double pow;
+        for (int i = 0; i < number.length(); i++) {
+
+            index = dictionary.indexOf(number.charAt(i)) + 1;
+            pow = Math.pow(26, number.length() - i - 1);
+            result += index * pow;
+        }
+        return result;
+    }
+
+
+    public static String int2str(int number) {
+        ArrayList<Integer> codesOfChars = new ArrayList<Integer>();
+
+        //Calculating indexes of chars
+        while (number > 26) {
+            int local;
+            if (number % 26 == 0) {
+                codesOfChars.add(0, 26);
+                local = (number / 26)-1;
+            } else {
+                codesOfChars.add(0, number % 26);
+                local = number / 26;
+            }
+            number=local;
+        }
+        codesOfChars.add(0, number);
+
+        //Transforming indexes to chars and concatenation them
+        StringBuilder builder = new StringBuilder();
+        for (int el : codesOfChars) {
+            builder.append(dictionary.charAt(el - 1));
+        }
+
+        return builder.toString();
+    }
+
+
+    public static String rightColumn(String number) {
+        return int2str(str2int(number) + 1);
+    }
+
+
+    public static void main(String[] args) {
+
+        System.out.println("A ==> " + str2int("A") + " ==> " + int2str(1));
+        System.out.println("B ==> " + str2int("B") + " ==> " + int2str(2));
+        System.out.println("Z ==> " + str2int("Z") + " ==> " + int2str(26));
+        System.out.println("AA ==> " + str2int("AA") + " ==> " + int2str(27));
+        System.out.println("AZ ==> " + str2int("AZ") + " ==> " + int2str(52));
+        System.out.println("BA ==> " + str2int("BA") + " ==> " + int2str(53));
+        System.out.println("ZZ ==> " + str2int("ZZ") + " ==> " + int2str(702));
+        System.out.println("AAA ==> " + str2int("AAA") + " ==> " + int2str(703));
+    }
+}

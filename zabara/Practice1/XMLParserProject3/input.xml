@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xml" href="weapons.xsl"?>
+<weapons>
+    <knife id="id2">
+        <type>blade</type>
+        <handy>oneHanded</handy>
+        <visual>
+            <length>1</length>
+            <width>0.01</width>
+            <handle>wood</handle>
+            <bloodsink>false</bloodsink>
+        </visual>
+        <value>true</value>
+    </knife>
+    <knife id="id3">
+        <type>blade</type>
+        <handy>oneHanded</handy>
+        <visual>
+            <length>0.4</length>
+            <width>0.05</width>
+            <handle>wood</handle>
+            <bloodsink>true</bloodsink>
+        </visual>
+        <value>false</value>
+    </knife>
+    <knife id="id1">
+        <type>katana</type>
+        <handy>twoHanded</handy>
+        <visual>
+            <length>1</length>
+            <width>0.03</width>
+            <handle>wood</handle>
+            <bloodsink>true</bloodsink>
+        </visual>
+        <value>true</value>
+    </knife>
+    <knife id="id4">
+        <type>saber</type>
+        <handy>twoHanded</handy>
+        <visual>
+            <length>0.5</length>
+            <width>0.1</width>
+            <handle>metal</handle>
+            <bloodsink>true</bloodsink>
+        </visual>
+        <value>false</value>
+    </knife>
+</weapons>

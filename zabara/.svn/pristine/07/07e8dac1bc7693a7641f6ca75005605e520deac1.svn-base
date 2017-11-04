@@ -1,0 +1,56 @@
+package ua.nure.zabara.Practice5;
+
+public class Part3 extends Thread {
+	Counter c=null;
+
+	Part3(Counter c){
+		this.c=c;
+	}
+
+	public  void run(){
+		int i=0;
+
+		while (i < 10) {
+			if (c.counter1 > c.counter2) {
+				System.out.println(Thread.currentThread().getName() + " C1:" + c.counter1 + " bigger than C2:" + c.counter2);
+			} else if (c.counter1 < c.counter2) {
+				System.out.println(Thread.currentThread().getName() + " C2:" + c.counter2 + " bigger than C1:" + c.counter1);
+			}else{
+				System.out.println(Thread.currentThread().getName() + " C2:" + c.counter2 + " ======== equal ======= C1:" + c.counter1);
+			}
+
+			c.incrementOne();
+			try {
+				Thread.sleep(10);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			c.incrementTwo();
+			i++;
+		}
+	}
+
+	public static void main(String[] args) {
+		Counter c=new Counter();
+
+		Part3 p1 =new Part3(c);
+		Part3 p2 = new Part3(c);
+		p1.start();
+		p2.start();
+	}
+
+}
+class Counter{
+	int counter1=0;
+	int counter2=0;
+
+	public void incrementOne(){
+		counter1++;
+	}
+	public void incrementTwo(){
+		counter2++;
+	}
+
+
+
+}

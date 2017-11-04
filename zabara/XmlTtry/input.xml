@@ -1,0 +1,19 @@
+<!--  Input XML document. This XML is valid against Test.xsd XML schema-->
+
+<st3:Bill xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:st3="http://nure.ua/zabara/SummaryTask3/entity"
+          xsi:schemaLocation="http://nure.ua/zabara/SummaryTask3/entity input.xsd">
+
+    <Product>
+        <ProductName>
+            Чебурек
+        </ProductName>
+        <Price>23</Price>
+    </Product>
+
+    <Product>
+        <ProductName>Шаурма</ProductName>
+        <Price>35</Price>
+    </Product>
+
+</st3:Bill>

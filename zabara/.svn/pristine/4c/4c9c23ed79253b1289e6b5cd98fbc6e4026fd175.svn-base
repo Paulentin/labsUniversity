@@ -1,0 +1,88 @@
+
+package ua.nure.zabara.Practice5;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.RandomAccessFile;
+
+public class Part6 extends Thread {
+
+    private static final Object MONITOR = new Object();
+    private static final int THREADS_NUMBER = 10;
+    private static final int COLUMNS = 20;
+    private static final int EOL_LENGTH = System.lineSeparator().length();
+    private static String fileName = "data/test.txt";
+
+    private RandomAccessFile out;
+    private int raw;
+
+
+    Part6(RandomAccessFile out, int raw) {
+        this.out = out;
+        this.raw = raw;
+    }
+
+
+    public void writer(int raw) {
+
+        synchronized (MONITOR) {
+            for (int i = 0; i < COLUMNS; i++) {
+                try {
+
+                    out.seek(i + (COLUMNS + EOL_LENGTH * raw));
+                    if(COLUMNS-1==i){
+
+                        out.writeBytes(System.lineSeparator());
+                    }else {
+                        out.write('0'+raw);
+                    }
+                    MONITOR.notifyAll();
+                    MONITOR.wait();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+
+        }
+    }
+
+
+    @Override
+    public void run(){
+            writer(raw);
+    }
+
+
+
+    public static void main(String[] args) throws IOException, InterruptedException {
+
+        File file = new File(fileName);
+        if(file.exists()) {
+            file.delete();
+        }
+        file.createNewFile();
+        final RandomAccessFile r = new RandomAccessFile(file, "rw");
+
+        Part6[] threads = new Part6[THREADS_NUMBER];
+        for (int i = 0; i < threads.length; i++) {
+
+            threads[i] = new Part6(r, i);
+            threads[i].start();
+
+        }
+
+ synchronized (MONITOR) {
+            for (int i = 0; i < 500; i++) {
+                MONITOR.notifyAll();
+            }
+        }
+
+        for (int j = 0; j < threads.length; j++) {
+            threads[j].join();
+        }
+
+        System.out.println(r.read());
+    }
+}

@@ -1,0 +1,20 @@
+package ua.nure.zabara.Practice4.part1;
+
+import org.junit.Test;
+import ua.nure.zabara.Practice4.Part1;
+
+import static org.junit.Assert.*;
+
+public class Part1Test {
+    @Test
+    public void read() throws Exception {
+        assertEquals("КЛАСС ДОЛЖЕН РАЗБИРАТЬ ТЕКСТОВЫЙ ФАЙЛ и ВОЗВРАЩАТЬ ПРЕДЛОЖЕНИЯ из ФАЙЛА\n",Part1.read());
+    }
+
+    @Test
+    public void main() throws Exception {
+
+        Part1.main(new String[]{"as","as"});
+    }
+
+}

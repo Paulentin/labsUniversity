@@ -1,0 +1,8 @@
+package ua.nure.zabara.Practice2;
+
+/**
+ * Created by dobro on 7/8/17.
+ */
+public interface ListIterable {
+    ListIterator listIterator();
+}

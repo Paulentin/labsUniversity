@@ -1,0 +1,69 @@
+
+<st3:Weapons xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:st3="http://nure.ua/zabara/SummaryTask3/entity"
+          xsi:schemaLocation="http://nure.ua/zabara/SummaryTask3/entity input.xsd">
+
+
+    <Weapon >
+        <type>
+            knife
+        </type>
+        <handy>
+            1
+        </handy>
+        <origin>
+            UA
+        </origin>
+        <value>
+            false
+        </value>
+        <Visuality>
+            <NotWoodenHandle/>
+            <length>
+                10
+            </length>
+            <width>
+                12
+            </width>
+            <material>
+                sie
+            </material>
+            <bloodgoing>
+                true
+            </bloodgoing>
+        </Visuality>
+    </Weapon>
+
+
+    <Weapon >
+        <type>
+            Katana
+        </type>
+        <handy>
+            2
+        </handy>
+        <origin>
+            China
+        </origin>
+        <value>
+            true
+        </value>
+        <Visuality>
+            <WoodenHandle woodType="redWood"/>
+
+            <length>
+                10
+            </length>
+            <width>
+                12
+            </width>
+            <material>
+                sie
+            </material>
+            <bloodgoing>
+                true
+            </bloodgoing>
+        </Visuality>
+    </Weapon>
+
+</st3:Weapons>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema  xmlns:xsd="http://www.w3.org/2001/XMLSchema" >
+ 
+    <xsd:element name="weapons" type="Weapons"/>
+    <xsd:element name="knife" type="KnifeType"/>
+    <xsd:complexType name="KnifeType">
+        <xsd:sequence>
+            <xsd:element name="type" type="xsd:string"></xsd:element>
+            <xsd:element name="handy" type="xsd:string"></xsd:element>
+            <xsd:element name="visual" type="VisualType"></xsd:element>
+            <xsd:element name="value" type="xsd:boolean"></xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="id" type="xsd:ID"/>
+    </xsd:complexType>
+    <xsd:complexType name="Weapons">
+        <xsd:sequence>
+            <xsd:element ref="knife" minOccurs="1" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="VisualType">
+        <xsd:sequence>
+            <xsd:element name="length">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:double">
+                        <xsd:minExclusive value="0.125"></xsd:minExclusive>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="width">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:double">
+                        <xsd:minExclusive value="0.005"></xsd:minExclusive>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="handle">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="wood"/>
+                        <xsd:enumeration value="plastic"/>
+                        <xsd:enumeration value="metal"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="bloodsink" type="xsd:boolean"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+</xsd:schema>

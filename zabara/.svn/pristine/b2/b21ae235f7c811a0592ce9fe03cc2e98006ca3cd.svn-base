@@ -1,0 +1,37 @@
+package ua.nure.zabara.Practice4.part2;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import ua.nure.zabara.Practice4.Part2;
+
+public class Part2Test {
+
+	@Test
+	public void generate() throws Exception {
+		Part2.generate();
+	}
+
+	@Test
+	public void read() throws Exception {
+		//as
+	}
+
+	@Test
+	public void write() throws Exception {
+	}
+
+	@Test
+	public void sortAndwrite() throws Exception {
+	}
+
+	@Test
+	public void main() throws Exception {
+	}
+
+	@Test
+	public void test() {
+//		fail("Not yet implemented");
+	}
+
+}

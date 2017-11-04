@@ -1,0 +1,62 @@
+package ua.nure.zabara.Practice3;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+/**
+ * Created by dobro on 7/19/17.
+ */
+public class Part5 {
+
+    static Map <Integer,String> numerals = new LinkedHashMap<>();
+    static {
+        numerals.put(1000, "M");
+        numerals.put(900, "CM");
+        numerals.put(500, "D");
+        numerals.put(400, "CD");
+        numerals.put(100, "C");
+        numerals.put(90, "XC");
+        numerals.put(50, "L");
+        numerals.put(40, "XL");
+        numerals.put(10, "X");
+        numerals.put(9, "IX");
+        numerals.put(5, "V");
+        numerals.put(4, "IV");
+        numerals.put(3, "III");
+        numerals.put(2, "II");
+        numerals.put(1, "I");
+    }
+
+    public static String decimal2roman(int x){
+        StringBuilder sb=new StringBuilder();
+        int value=x;
+
+        while (value!=0){
+            for (Integer key: numerals.keySet()){
+                if (value-key>=0){
+                    value=value-key;
+                    sb.append(numerals.get(key));
+                    break;
+                }
+            }
+        }
+        return sb.toString();
+    }
+
+    public final static int roman2decimal(String roman) {
+        int start = 0, value = 0;
+        for (Integer i:numerals.keySet()){
+            while (roman.startsWith(numerals.get(i), start)) {
+                value += i;
+                start += numerals.get(i).length();
+            }
+        }
+        return start == roman.length() ? value : -1;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(decimal2roman(5542));
+        System.out.println(roman2decimal(decimal2roman(5542)));
+
+    }
+}

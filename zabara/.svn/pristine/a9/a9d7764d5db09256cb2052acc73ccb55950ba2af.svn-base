@@ -1,0 +1,26 @@
+<html>
+<body>
+<h2>All weapons</h2>
+<table border="1">
+<tr bgcolor="#9acd32">
+<th>Knife type</th><th>Handy</th><th>Value</th><th>Visual</th>
+</tr>
+<tr>
+<td>blade</td><td>oneHanded</td><td>true</td><td>1<br>0.01<br>wood<br>false<br>
+</td>
+</tr>
+<tr>
+<td>blade</td><td>oneHanded</td><td>false</td><td>0.4<br>0.05<br>wood<br>true<br>
+</td>
+</tr>
+<tr>
+<td>katana</td><td>twoHanded</td><td>true</td><td>1<br>0.03<br>wood<br>true<br>
+</td>
+</tr>
+<tr>
+<td>saber</td><td>twoHanded</td><td>false</td><td>0.5<br>0.1<br>metal<br>true<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

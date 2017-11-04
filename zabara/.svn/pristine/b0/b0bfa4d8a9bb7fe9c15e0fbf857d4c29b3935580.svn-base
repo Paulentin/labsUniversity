@@ -1,0 +1,30 @@
+package ua.nure.zabara.Practice4;
+
+import org.jetbrains.annotations.NotNull;
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+/**
+ * Created by dobro on 7/26/17.
+ */
+public class Part3Test {
+
+
+    @Test
+    public void getOutput() throws Exception {
+       Part3.getOutput("char");
+       assertEquals("a d и л а ",Part3.result);
+       Part3.getOutput("string");
+       assertEquals("bcd фвыа ",Part3.result);
+
+    }
+
+    @Test
+    public void checker(){
+       // Part3.checker();
+    }
+
+
+
+}

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema  xmlns:xsd="http://www.w3.org/2001/XMLSchema" >
+
+    <xsd:element name="beers" type="Beers"/>
+    <xsd:element name="beer" type="BeerType"/>
+    <xsd:complexType name="BeerType">
+        <xsd:sequence>
+            <xsd:element name="type" type="xsd:string"></xsd:element>
+            <xsd:element name="ai" type="xsd:boolean"></xsd:element>
+            <xsd:element name="manufacturer" type="xsd:string"></xsd:element>
+            <xsd:element name="ingridient" type="Ingridients"></xsd:element>
+            <xsd:element name="char" type="Chars"></xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="id" type="xsd:ID"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="Beers">
+        <xsd:sequence>
+            <xsd:element ref="beer" minOccurs="1" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="Ingridients">
+        <xsd:sequence>
+
+        </xsd:sequence>
+    </xsd:complexType>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <xsd:complexType name="Chars">
+        <xsd:sequence>
+            <xsd:element name="length">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:double">
+                        <xsd:minExclusive value="0.125"></xsd:minExclusive>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="width">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:double">
+                        <xsd:minExclusive value="0.005"></xsd:minExclusive>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="handle">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="wood"/>
+                        <xsd:enumeration value="plastic"/>
+                        <xsd:enumeration value="metal"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="bloodsink" type="xsd:boolean"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+</xsd:schema>

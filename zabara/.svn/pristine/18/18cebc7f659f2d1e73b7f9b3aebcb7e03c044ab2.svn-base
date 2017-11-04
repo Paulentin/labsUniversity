@@ -1,0 +1,84 @@
+package ua.nure.zabara.Practice4;
+
+
+import java.io.*;
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Part3 {
+
+	private static String REG_CHAR="(?U)(\\b\\p{Alpha}\\s)";
+	private static String REG_STRING="(?U)[!.\\D]\\w{2,}[\\D]\\s";
+	private static String REG_INT="\\s\\d*\\s";
+	private static String REG_DOUBLE="[0-9]*\\.[0-9]*";
+
+	public static String result;
+	static void checker(String regExp){
+        StringBuilder sb = new StringBuilder();
+        BufferedReader br;
+
+
+        try {
+            br = new BufferedReader(new InputStreamReader(
+									 new FileInputStream("part3.txt")));
+
+            Pattern p =Pattern.compile(regExp);
+            Matcher m = null;
+            String tmp;
+
+            while ((tmp = br.readLine()) != null) {
+                m = p.matcher(tmp);
+                while (m.find()) {
+                       sb.append(m.group().trim()+" ");
+
+                }
+            }
+            sb.trimToSize();
+            System.out.println(sb.toString());
+            result=sb.toString();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+    }
+
+
+    public static void getOutput(String s){
+	    switch (s){
+            case "int":
+                checker(REG_INT);
+                break;
+            case "String":
+                checker(REG_STRING);
+                break;
+            case "double":
+                checker(REG_DOUBLE);
+                break;
+            case "char":
+                checker(REG_CHAR);
+                break;
+
+	    }
+
+    }
+
+	public static void main(String[] args) {
+
+        Scanner sc= new Scanner(System.in);
+
+        while(sc.hasNext()){
+            String s=sc.next();
+            if ("stop".equalsIgnoreCase(s)){
+                sc.close();
+                break;
+            }else{
+                getOutput(s);
+            }
+        }
+
+
+	}
+
+}

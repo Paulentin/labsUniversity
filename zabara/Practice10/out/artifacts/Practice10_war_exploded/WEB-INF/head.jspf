@@ -1,0 +1,37 @@
+<%@ page pageEncoding="UTF-8"%>
+
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<head>
+
+
+    <title>
+		${title}
+	</title>
+
+	<!-- Header -->
+	<header id="header" class="skel-layers-fixed">
+
+			<c:if test="${not empty sessionScope.user}">
+
+
+				<%--===========================================================================
+                  Type user name if the user object is presented in the current session.
+                ===========================================================================--%>
+		    	<c:out value="${user.name} ${user.lastName}"/>
+			    <%--===========================================================================
+                Type user role name if the user object is presented in the current session.
+                ===========================================================================--%>
+
+			</c:if>
+
+            <c:if test="${empty user}">
+					<c:redirect url="index.jsp"/>
+            </c:if>
+        </h1>
+
+	</header>
+
+
+
+</head>

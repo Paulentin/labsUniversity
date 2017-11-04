@@ -1,0 +1,28 @@
+<!--  XML schema -->
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://nure.ua/zabara/SummaryTask3/entity"
+            xmlns:tns="http://nure.ua/zabara/SummaryTask3/entity">
+
+    <xsd:element name="Bill">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Product"
+                             type="tns:Product" minOccurs="1" maxOccurs="100"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:complexType name="Product">
+        <xsd:sequence>
+            <xsd:element name="ProductName" type="xsd:string" />
+            <xsd:sequence>
+                <xsd:element name="Price" type="tns:Price"/>
+            </xsd:sequence>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="Price" mixed="true">
+        <xsd:attribute name="Amount"  unit="UAH" type="xsd:double" default="0" />
+    </xsd:complexType>
+</xsd:schema>

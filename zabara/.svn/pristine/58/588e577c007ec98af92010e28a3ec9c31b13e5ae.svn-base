@@ -1,0 +1,17 @@
+package ua.nure.zabara.Practice4;
+
+import org.jetbrains.annotations.NotNull;
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+/**
+ * Created by dobro on 7/26/17.
+ */
+public class Part3Test {
+
+   
+
+
+
+}
