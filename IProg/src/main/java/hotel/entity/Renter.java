@@ -1,18 +1,8 @@
 package hotel.entity;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlType;
 import java.sql.Date;
 import java.util.Objects;
 
-@XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Renter", propOrder = {
-        "name",
-        "telNumber",
-        "dateStart",
-        "dateEnd",
-})
 public class Renter {
     private String name;
     private String telNumber;

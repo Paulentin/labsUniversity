@@ -1,0 +1,26 @@
+package server;
+
+import server.service.RoomServiceImpl;
+
+import java.util.Scanner;
+
+import javax.xml.ws.Endpoint;
+
+public class RoomServer {
+	private static final Object implementor = new RoomServiceImpl();
+	private static final String address = "http://localhost:9000/hotel";
+	
+	public static void main(String[] args) throws InterruptedException {
+		System.out.println("Starting Server");
+		Endpoint endpoint = Endpoint.publish(address, implementor);
+		
+		System.out.println("Server ready... at " + address);
+
+		System.err.println("Press <enter> to stop service... ");
+		Scanner sc = new Scanner(System.in);
+		sc.nextLine();
+		sc.close();
+		System.out.println("Server exit");
+		endpoint.stop();
+	}
+}
