@@ -89,7 +89,7 @@ public abstract class Instrument implements Comparable{
 
  }
 
- class CmpInstruments implements Comparator<Instrument>{
+ class CmpInstrumentsPrice implements Comparator<Instrument>{
 
      @Override
      public int compare(Instrument o, Instrument t1) {

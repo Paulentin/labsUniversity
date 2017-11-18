@@ -20,9 +20,21 @@ public class Orchestra {
             Instrument i=(Instrument)iterator.next();
             i.play();
         }
-
         System.out.println(list.toString());
+
+        sortNshow();
     }
+
+    public static void sortNshow(){
+
+        Instrument [] instruments= new Instrument[] {new Guitar(),new Trumpet(),new Piano(),new Drum()};
+        Arrays.sort(instruments,new CmpInstrumentsByToString());
+
+        for (Instrument instrument : instruments) {
+            System.out.println(instrument);
+        }
+    }
+
     public static MyListImpl getOrchestra(){
         Piano p=new Piano();
         MyListImpl list = new MyListImpl();
@@ -30,6 +42,7 @@ public class Orchestra {
         list.add(new Trumpet());
         list.add(new Drum());
         list.add(new Guitar());
+
 
         return list;
     }

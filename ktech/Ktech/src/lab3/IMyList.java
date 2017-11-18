@@ -3,13 +3,11 @@ package lab3;
 import lab2.Instrument;
 
 interface IMyList extends Iterable {
-
     void add(Instrument e);
     void clear();
     boolean remove();
     Object[] toArray();
     boolean contains(Instrument e);
-
 }
 
 

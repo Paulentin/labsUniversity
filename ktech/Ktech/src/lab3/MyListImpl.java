@@ -1,12 +1,8 @@
 package lab3;
 
-
-
 import lab2.Instrument;
 
 import java.util.Iterator;
-
-import java.util.LinkedList;
 import java.util.NoSuchElementException;
 
 public class MyListImpl implements IMyList {
@@ -16,8 +12,8 @@ public class MyListImpl implements IMyList {
     private MyListImpl.Node first;
     private MyListImpl.Node last;
 
-    public MyListImpl(){
-        this.size=0;
+    public MyListImpl() {
+        this.size = 0;
     }
 
     private static class Node<Instrument> {
@@ -35,23 +31,22 @@ public class MyListImpl implements IMyList {
     @Override
     public void add(Instrument e) {
         this.linkLast(e);
-
     }
+
     MyListImpl.Node<Instrument> node(int var1) {
         MyListImpl.Node var2;
         int var3;
         if (var1 < this.size >> 1) {
             var2 = this.first;
 
-            for(var3 = 0; var3 < var1; ++var3) {
+            for (var3 = 0; var3 < var1; ++var3) {
                 var2 = var2.next;
             }
-
             return var2;
         } else {
             var2 = this.last;
 
-            for(var3 = this.size - 1; var3 > var1; --var3) {
+            for (var3 = this.size - 1; var3 > var1; --var3) {
                 var2 = var2.prev;
             }
 
@@ -61,7 +56,7 @@ public class MyListImpl implements IMyList {
 
     void linkLast(Instrument var1) {
         MyListImpl.Node var2 = this.last;
-        MyListImpl.Node var3 = new MyListImpl.Node(var2, var1, (MyListImpl.Node)null);
+        MyListImpl.Node var3 = new MyListImpl.Node(var2, var1, (MyListImpl.Node) null);
         this.last = var3;
         if (var2 == null) {
             this.first = var3;
@@ -76,7 +71,7 @@ public class MyListImpl implements IMyList {
     @Override
     public void clear() {
         MyListImpl.Node var2;
-        for(MyListImpl.Node var1 = this.first; var1 != null; var1 = var2) {
+        for (MyListImpl.Node var1 = this.first; var1 != null; var1 = var2) {
             var2 = var1.next;
             var1.item = null;
             var1.next = null;
@@ -93,7 +88,7 @@ public class MyListImpl implements IMyList {
         Instrument[] var1 = new Instrument[this.size];
         int var2 = 0;
 
-        for(MyListImpl.Node var3 = this.first; var3 != null; var3 = var3.next) {
+        for (MyListImpl.Node var3 = this.first; var3 != null; var3 = var3.next) {
             var1[var2++] = (Instrument) var3.item;
         }
         return var1;
@@ -107,20 +102,20 @@ public class MyListImpl implements IMyList {
     public int indexOf(Object var1) {
         int var2 = 0;
         MyListImpl.Node var3;
-        if (var1 == null) for(var3 = this.first; var3 != null; var3 = var3.next) {
-                if (var3.item == null) return var2;
-                ++var2;
+        if (var1 == null) for (var3 = this.first; var3 != null; var3 = var3.next) {
+            if (var3.item == null) return var2;
+            ++var2;
         }
-        else for(var3 = this.first; var3 != null; var3 = var3.next) {
-                if (var1.equals(var3.item)) return var2;
-                ++var2;
+        else for (var3 = this.first; var3 != null; var3 = var3.next) {
+            if (var1.equals(var3.item)) return var2;
+            ++var2;
         }
         return -1;
     }
 
     @Override
     public boolean remove() {
-        if(this.removeFirst()!=null)return true;
+        if (this.removeFirst() != null) return true;
         return false;
     }
 
@@ -144,23 +139,20 @@ public class MyListImpl implements IMyList {
     }
 
     public String toString() {
-        StringBuilder s =new StringBuilder();
+        StringBuilder s = new StringBuilder();
         s.append("[");
 
-
         MyListImpl.Node<Instrument> prev;
-        int k=0;
-        for(prev = this.first; prev != null; prev = prev.next) {
-            s.append(" element:"+k++ +" ");
-            s.append(prev.item.toString()+" |");
+        int k = 0;
+        for (prev = this.first; prev != null; prev = prev.next) {
+            s.append(" element:" + k++ + " ");
+            s.append(prev.item.toString() + " |");
         }
-        s.delete(s.length()-2,s.length());
+        s.delete(s.length() - 2, s.length());
         s.append("]");
         return s.toString();
 
     }
-
-
 
     public Iterator<Instrument> iterator() {
         return new IteratorImpl(0);
@@ -171,21 +163,18 @@ public class MyListImpl implements IMyList {
         private MyListImpl.Node<Instrument> lastReturned;
         private MyListImpl.Node<Instrument> next;
         private int nextIndex;
+        private boolean isCalled;
+
 
         IteratorImpl(int var2) {
-//            this.expectedModCount = LinkedList.this.modCount;
             this.next = var2 == MyListImpl.this.size ? null : MyListImpl.this.node(var2);
             this.nextIndex = var2;
         }
 
-
         public boolean hasNext() { // проверяет, есть ли следующий элемент для выборки методом next
-            // ...
-//            return this.next.next!=null;
             return nextIndex < MyListImpl.this.size;
         }
 
-        boolean isCalled;
         public Instrument next() { // возвращает следующий элемент
             // ...
             isCalled = true;
@@ -199,15 +188,16 @@ public class MyListImpl implements IMyList {
                 return this.lastReturned.item;
             }
         }
+
         public void remove() {
-            if(isCalled){
-                this.lastReturned=null;
-                isCalled=false;
-            }else {
-                throw new IllegalStateException();}
+            if (isCalled) {
+                this.lastReturned = null;
+                isCalled = false;
+            } else {
+                throw new IllegalStateException();
+            }
         }
     }
-
 }
 
 
