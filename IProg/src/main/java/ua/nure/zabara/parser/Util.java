@@ -6,13 +6,10 @@ import hotel.entity.Room;
 
 import java.sql.Date;
 
-/**
- * Created by iryna.subota on 12.02.2017.
- */
 
 public class Util {
 
-    public static Hotel createBookShop() {
+    public static Hotel createHotel() {
         Hotel hotel = new Hotel();
 
         Room room = new Room();

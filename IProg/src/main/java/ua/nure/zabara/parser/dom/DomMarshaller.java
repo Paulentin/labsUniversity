@@ -30,7 +30,7 @@ public class DomMarshaller implements HotelMarshaller {
 
     public static void main(String[] arg) throws IOException {
         HotelMarshaller parser = new DomMarshaller();
-        parser.marshal(Util.createBookShop(), "src/main/resources/xml/dom.xml");
+        parser.marshal(Util.createHotel(), "src/main/resources/xml/dom.xml");
 
     }
 
