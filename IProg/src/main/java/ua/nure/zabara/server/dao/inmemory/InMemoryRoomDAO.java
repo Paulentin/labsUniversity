@@ -1,9 +1,15 @@
-package server.dao.inmemory;
+package ua.nure.zabara.server.dao.inmemory;
 
-import hotel.entity.Room;
-import server.dao.DAOException;
-import server.dao.RoomDAO;
+import ua.nure.zabara.entity.Hotel;
+import ua.nure.zabara.entity.Room;
+import ua.nure.zabara.parser.HotelMarshaller;
+import ua.nure.zabara.parser.HotelUnmarshaller;
+import ua.nure.zabara.parser.dom.DomMarshaller;
+import ua.nure.zabara.parser.dom.DomUnmarshaller;
+import ua.nure.zabara.server.dao.DAOException;
+import ua.nure.zabara.server.dao.RoomDAO;
 
+import java.io.IOException;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -12,8 +18,10 @@ public class InMemoryRoomDAO implements RoomDAO {
     private static HashMap<Integer, Room> rooms = new HashMap<Integer, Room>();
     private static int roomIndex;
     private static InMemoryRoomDAO dao;
+    private static HotelMarshaller marshaller;
 
     private InMemoryRoomDAO() {
+        marshaller = new DomMarshaller();
         initRooms();
     }
 
@@ -30,7 +38,20 @@ public class InMemoryRoomDAO implements RoomDAO {
             throw new DAOException("Oreder can not ba a null");
         item.setId(++roomIndex);
         rooms.put(roomIndex, item);
+        try {
+            marshaller.marshal(createHotel(),"src/main/resources/xml/hotel.xml" );
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return roomIndex;
+    }
+
+    private Hotel createHotel() {
+        HashSet<Room> roomSet = new HashSet<>();
+        for (Room room : rooms.values()) {
+            roomSet.add(room);
+        }
+        return new Hotel(roomSet);
     }
 
     @Override
@@ -49,7 +70,7 @@ public class InMemoryRoomDAO implements RoomDAO {
         Pattern p = Pattern.compile(sb.toString(), Pattern.UNICODE_CASE | Pattern.CASE_INSENSITIVE);
         for (Room o : rooms.values()) {
             List<Matcher> matcherList = new ArrayList<>();
-            o.getWhorent().forEach(renter -> matcherList.add(p.matcher(renter.getTelNumber())));
+            o.getRented().forEach(renter -> matcherList.add(p.matcher(renter.getTelNumber())));
 
             for (Matcher matcher : matcherList) {
                 if (matcher.matches()) {
@@ -74,22 +95,13 @@ public class InMemoryRoomDAO implements RoomDAO {
     }
 
     private void initRooms() {
-        Room[] rooms = new Room[]{
-                new Room(1, 2, 3),
-                new Room(2, 3, 2),
-                new Room(3, 1, 2),
-                new Room(4, 2, 2),
-                new Room(5, 3, 1),
-                new Room(6, 4, 3),
-                new Room(7, 5, 1),
-                new Room(8, 3, 2),
-        };
-        for (int i = 0; i < rooms.length; i++) {
-            try {
-                addRoom(rooms[i]);
-            } catch (DAOException e) {
-                throw new RuntimeException("Can not init");
-            }
+        System.out.println("Storage initialized");
+        HotelUnmarshaller unmarshaller = new DomUnmarshaller();
+        Hotel hotel = unmarshaller.unmarshal("src/main/resources/xml/dom.xml");
+
+        int i =0;
+        for (Room room : hotel.getRooms()) {
+            rooms.put(i++,room);
         }
     }
 }

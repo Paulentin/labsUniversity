@@ -1,6 +1,6 @@
-package server.dao;
+package ua.nure.zabara.server.dao;
 
-import server.dao.inmemory.InMemoryDAOFactory;
+import ua.nure.zabara.server.dao.inmemory.InMemoryDAOFactory;
 
 public abstract class DAOFactory {
 
@@ -8,12 +8,6 @@ public abstract class DAOFactory {
     public static final int DERBY = 1;
     public static final int INMEMORY = 2;
     public static final int MYSQL = 3;
-
-    // There will be a method for each DAO that can be
-    // created. The concrete factories will have to
-    // implement these methods.
-    public abstract RoomDAO getRoomDAO();
-
 
     public static DAOFactory getDAOFactory(int whichFactory) {
 
@@ -25,4 +19,9 @@ public abstract class DAOFactory {
                 return null;
         }
     }
+
+    // There will be a method for each DAO that can be
+    // created. The concrete factories will have to
+    // implement these methods.
+    public abstract RoomDAO getRoomDAO();
 }

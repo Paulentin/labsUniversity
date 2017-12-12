@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="IProgThirdLabClient:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="IProgThirdLabClient.war">
+      <element id="artifact" artifact-name="IProgThirdLabClient:war exploded" />
+    </root>
+  </artifact>
+</component>

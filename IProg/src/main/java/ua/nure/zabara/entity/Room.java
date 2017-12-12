@@ -1,4 +1,4 @@
-package hotel.entity;
+package ua.nure.zabara.entity;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -11,6 +11,7 @@ import java.util.Set;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "Room", propOrder = {
+        "id",
         "rented",
         "stars",
         "staffAmount",
@@ -22,18 +23,18 @@ public class Room {
     private int stars;
     private int staffAmount;
     private BigDecimal price;
-    private boolean barFridge;
-    private Set<Renter> whorent;
+    private String barfridge;
+    private Set<Renter> rented;
 
     public Room() {
-        this.whorent = new HashSet<>();
+        this.rented = new HashSet<>();
     }
 
     public Room(int id, int stars, int stuffAmount) {
         this.id = id;
         this.stars = stars;
         this.staffAmount = stuffAmount;
-        this.whorent = new HashSet<>();
+        this.rented = new HashSet<>();
     }
 
     public int getId() {
@@ -68,21 +69,21 @@ public class Room {
         this.price = price;
     }
 
-    public boolean isBarFridge() {
-        return barFridge;
+    public String isBarfridge() {
+        return barfridge;
     }
 
-    public void setBarFridge(boolean barFridge) {
-        this.barFridge = barFridge;
+    public void setBarfridge(String barfridge) {
+        this.barfridge = barfridge;
     }
 
-    public Set<Renter> getWhorent() {
-        return whorent;
+    public Set<Renter> getRented() {
+        return rented;
     }
 
 
     public boolean addRenter(Renter u) {
-        return whorent.add(u);
+        return rented.add(u);
     }
 
     @Override
@@ -92,12 +93,32 @@ public class Room {
         Room room = (Room) o;
         return id == room.id &&
                 stars == room.stars &&
-                Objects.equals(whorent, room.whorent);
+                Objects.equals(rented, room.rented);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, stars, whorent);
+        return Objects.hash(id, stars, rented);
+    }
+
+    @Override
+    public String toString() {
+        return "Room{" +
+                "id=" + id +
+                ", stars=" + stars +
+                ", staffAmount=" + staffAmount +
+                ", price=" + price +
+                ", barfridge='" + barfridge +
+                getRentersString()+
+                '}';
+    }
+
+    private String getRentersString() {
+        StringBuilder sb = new StringBuilder();
+        for (Renter renter : rented) {
+            sb.append(renter.toString());
+        }
+        return sb.toString();
     }
 }
 

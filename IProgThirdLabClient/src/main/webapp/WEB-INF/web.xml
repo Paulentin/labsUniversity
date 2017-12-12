@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="3.0"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+
+
+	<display-name>Room service</display-name>
+	<context-param>
+		<description>Wsdl location</description>
+		<param-name>wsdl</param-name>
+		<param-value>http://localhost:9000/RoomService?wsdl</param-value>
+	</context-param>
+	<servlet>
+		<servlet-name>RoomsListServlet</servlet-name>
+		<servlet-class>ua.nure.zabara.service.RoomsListServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>RoomRemoveServlet</servlet-name>
+		<servlet-class>ua.nure.zabara.service.RoomRemoveServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>RoomUpdateServlet</servlet-name>
+		<servlet-class>ua.nure.zabara.service.RoomUpdateServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>RoomAddServlet</servlet-name>
+		<servlet-class>ua.nure.zabara.service.RoomAddServlet</servlet-class>
+	</servlet>
+
+	
+	<servlet-mapping>
+		<servlet-name>RoomsListServlet</servlet-name>
+		<url-pattern>/orders</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RoomRemoveServlet</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RoomUpdateServlet</servlet-name>
+		<url-pattern>/edit</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RoomAddServlet</servlet-name>
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>

@@ -1,4 +1,4 @@
-package hotel.entity;
+package ua.nure.zabara.entity;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -16,7 +16,7 @@ import java.util.Set;
 })
 @XmlRootElement(name = "hotel")
 public class Hotel {
-    private Set<Room> roomSet;
+    private Set<Room> room;
 
     public Hotel() {
 
@@ -25,24 +25,24 @@ public class Hotel {
                 new Room(2, 3, 2))));
     }
 
-    public Hotel(Set<Room> roomSet) {
-        this.roomSet = roomSet;
+    public Hotel(Set<Room> room) {
+        this.room = room;
     }
 
-    public Set<Room> getRoomSet() {
-        return roomSet;
+    public Set<Room> getRooms() {
+        return room;
     }
 
-    public void setRoomSet(Set<Room> roomList) {
-        this.roomSet = roomList;
+    public void setRooms(Set<Room> roomList) {
+        this.room = roomList;
     }
 
     public void addRoom(Room room) {
-        roomSet.add(room);
+        this.room.add(room);
     }
 
     public void removeRoom(Room room) {
-        roomSet.remove(room);
+        this.room.remove(room);
     }
 
     @Override
@@ -50,11 +50,11 @@ public class Hotel {
         if (o == null || getClass() != o.getClass()) return false;
         if (this == o) return true;
         Hotel hotel = (Hotel) o;
-        return Objects.equals(roomSet, hotel.roomSet);
+        return Objects.equals(room, hotel.room);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(roomSet);
+        return Objects.hash(room);
     }
 }

@@ -1,57 +1,54 @@
-package server;
+package ua.nure.zabara.server;
 
-import hotel.entity.Room;
-import server.dao.DAOException;
-
-import java.util.Collection;
+import ua.nure.zabara.entity.Room;
+import ua.nure.zabara.server.dao.DAOException;
+import ua.nure.zabara.server.dao.RoomDAO;
+import ua.nure.zabara.server.dao.inmemory.InMemoryRoomDAO;
 
 import javax.jws.WebMethod;
-import javax.jws.WebParam;
-import javax.jws.WebResult;
 import javax.jws.WebService;
-import javax.xml.ws.RequestWrapper;
-import javax.xml.ws.ResponseWrapper;
+import java.util.Collection;
+import java.util.HashSet;
 
-@WebService(name = "RoomService", targetNamespace = "http://service.ua.nure.zabara.server.order.nure.ua/")
-public interface RoomService {
+@WebService
+public class RoomService {
 
-	@WebMethod(operationName = "getRoom", action = "urn:GetRoom")
-	@RequestWrapper(className = "ua.nure.order.ua.nure.zabara.server.service.jaxws.GetRoom", localName = "getRoom", targetNamespace = "http://service.ua.nure.zabara.server.order.nure.ua/")
-	@ResponseWrapper(className = "ua.nure.order.ua.nure.zabara.server.service.jaxws.GetRoomResponse", localName = "getRoomResponse", targetNamespace = "http://service.ua.nure.zabara.server.order.nure.ua/")
-	@WebResult(name = "return")
-	public abstract Room getRoom(
-            @WebParam(name = "id") int id)
-			throws DAOException;
+    private static RoomDAO roomDao = InMemoryRoomDAO.getInstance();
 
-	@WebMethod(operationName = "addRoom", action = "urn:AddRoom")
-	@RequestWrapper(className = "ua.nure.order.ua.nure.zabara.server.service.jaxws.AddRoom", localName = "addRoom", targetNamespace = "http://service.ua.nure.zabara.server.order.nure.ua/")
-	@ResponseWrapper(className = "ua.nure.order.ua.nure.zabara.server.service.jaxws.AddRoomResponse", localName = "addRoomResponse", targetNamespace = "http://service.ua.nure.zabara.server.order.nure.ua/")
-	@WebResult(name = "return")
-	public abstract Room addRoom(
-            @WebParam(name = "book") Room book)
-			throws DAOException;
+    @WebMethod
+    public Room getRoom(int id) throws DAOException {
+        return roomDao.findById(id);
+    }
 
-	@WebMethod(operationName = "updateRoom", action = "urn:UpdateRoom")
-	@RequestWrapper(className = "ua.nure.order.ua.nure.zabara.server.service.jaxws.UpdateRoom", localName = "updateRoom", targetNamespace = "http://service.ua.nure.zabara.server.order.nure.ua/")
-	@ResponseWrapper(className = "ua.nure.order.ua.nure.zabara.server.service.jaxws.UpdateRoomResponse", localName = "updateRoomResponse", targetNamespace = "http://service.ua.nure.zabara.server.order.nure.ua/")
-	@WebResult(name = "return")
-	public abstract Room updateRoom(
-            @WebParam(name = "book") Room book)
-					throws DAOException;
-	
-	@WebMethod(operationName = "deleteRoom", action = "urn:DeleteRoom")
-	@RequestWrapper(className = "ua.nure.order.ua.nure.zabara.server.service.jaxws.DeleteRoom", localName = "deleteRoom", targetNamespace = "http://service.ua.nure.zabara.server.order.nure.ua/")
-	@ResponseWrapper(className = "ua.nure.order.ua.nure.zabara.server.service.jaxws.DeleteRoomResponse", localName = "deleteRoomResponse", targetNamespace = "http://service.ua.nure.zabara.server.order.nure.ua/")
-	@WebResult(name = "return")
-	public abstract Room deleteRoom(
-            @WebParam(name = "id") int id)
-					throws DAOException;
-	
-	@WebMethod(operationName = "listRooms", action = "urn:ListRooms")
-	@RequestWrapper(className = "ua.nure.order.ua.nure.zabara.server.service.jaxws.ListRooms", localName = "listRooms", targetNamespace = "http://service.ua.nure.zabara.server.order.nure.ua/")
-	@ResponseWrapper(className = "ua.nure.order.ua.nure.zabara.server.service.jaxws.ListRoomsResponse", localName = "listRoomsResponse", targetNamespace = "http://service.ua.nure.zabara.server.order.nure.ua/")
-	@WebResult(name = "return")
-	public abstract Collection<Room> listRooms(
-            @WebParam(name = "pattern") String pattern);
+    @WebMethod
+    public Collection<Room> getRoomsFromBusinessLayer() {
+        System.out.println("gettingRooms");
+        Collection<Room> rooms = new HashSet<Room>();
+        rooms.addAll(roomDao.listRooms());
+        for (Room room : rooms) {
+            System.out.println(room);
+        }
+        return rooms;
+    }
 
+
+    @WebMethod
+    public Room addRoom(Room room) throws DAOException {
+        room.setId(roomDao.addRoom(room));
+
+        return room;
+    }
+
+    @WebMethod
+    public Room deleteRoom(int id) throws DAOException {
+        return roomDao.deleteRoom(id);
+    }
+
+    //	@POST
+    @WebMethod
+    public Room updateRoom(Room room) throws DAOException {
+        roomDao.deleteRoom(room.getId());
+        room.setId(roomDao.addRoom(room));
+        return room;
+    }
 }

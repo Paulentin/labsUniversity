@@ -1,8 +1,8 @@
-package parser;
+package ua.nure.zabara.parser;
 
-import hotel.entity.Hotel;
-import hotel.entity.Renter;
-import hotel.entity.Room;
+import ua.nure.zabara.entity.Hotel;
+import ua.nure.zabara.entity.Renter;
+import ua.nure.zabara.entity.Room;
 
 import java.sql.Date;
 
@@ -18,11 +18,13 @@ public class Util {
 
         room.setId(3);
         room.setStars(5);
-        room.addRenter(new Renter(
-                "Pavlo Zabara",
-                "+380660219830",
-                new Date(20022002),
-                new Date(20021996)));
+        Renter r = new Renter();
+        r.setName("Pavlo Zabara");
+        r.setTelNumber("+380660219830");
+        r.setDateStart(new Date(20022002));
+        r.setDateEnd(new Date(20021996));
+
+        room.addRenter(r);
         room.setStaffAmount(2);
         return hotel;
     }

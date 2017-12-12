@@ -1,11 +1,11 @@
-import ua.nure.zabara.server.RoomServiceImpl;
+import ua.nure.zabara.server.RoomService;
 
 import javax.xml.ws.Endpoint;
 import java.util.Scanner;
 
 public class MainDemo {
-    public static final server.RoomService implementor = new RoomServiceImpl();
-    public static final String address = "http://localhost:9000/hotel";
+    public static final RoomService implementor = new RoomService();
+    public static final String address = "http://localhost:9000/RoomService";
 
     public static void main(String[] args) throws InterruptedException {
         System.out.println("Starting Server");
@@ -21,5 +21,4 @@ public class MainDemo {
         System.out.println("Server exit");
         endpoint.stop();
     }
-
 }

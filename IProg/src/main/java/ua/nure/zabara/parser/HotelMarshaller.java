@@ -1,6 +1,6 @@
-package parser;
+package ua.nure.zabara.parser;
 
-import hotel.entity.Hotel;
+import ua.nure.zabara.entity.Hotel;
 
 import java.io.IOException;
 

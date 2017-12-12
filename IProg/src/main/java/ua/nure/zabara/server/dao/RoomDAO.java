@@ -1,6 +1,6 @@
-package server.dao;
+package ua.nure.zabara.server.dao;
 
-import hotel.entity.Room;
+import ua.nure.zabara.entity.Room;
 
 import java.util.Collection;
 

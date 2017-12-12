@@ -1,7 +1,7 @@
-package server.dao.inmemory;
+package ua.nure.zabara.server.dao.inmemory;
 
-import server.dao.DAOFactory;
-import server.dao.RoomDAO;
+import ua.nure.zabara.server.dao.DAOFactory;
+import ua.nure.zabara.server.dao.RoomDAO;
 
 public class InMemoryDAOFactory extends DAOFactory {
     @Override

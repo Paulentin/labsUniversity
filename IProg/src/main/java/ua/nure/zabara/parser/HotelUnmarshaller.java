@@ -1,6 +1,6 @@
-package parser;
+package ua.nure.zabara.parser;
 
-import hotel.entity.Hotel;
+import ua.nure.zabara.entity.Hotel;
 
 /**
  * Created by iryna.subota on 12.02.2017.

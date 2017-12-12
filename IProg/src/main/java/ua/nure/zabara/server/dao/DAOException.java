@@ -1,4 +1,4 @@
-package server.dao;
+package ua.nure.zabara.server.dao;
 
 @SuppressWarnings("serial")
 public class DAOException extends Exception {

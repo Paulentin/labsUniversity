@@ -1,42 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="IProg:Web exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1adcb195-afa1-4682-9501-528d0408f2e6" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/MainDemo.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/Client.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/Login.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/RoomService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/RoomServiceImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/dao/DAOException.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/dao/DAOFactory.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/dao/RoomDAO.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/dao/inmemory/InMemoryDAOFactory.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/dao/inmemory/InMemoryRoomDAO.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/AddRoom.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/AddRoomResponse.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/DAOExceptionBean.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/DeleteRoom.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/DeleteRoomResponse.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/GetRoom.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/GetRoomResponse.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/ListRooms.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/ListRoomsResponse.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/UpdateRoom.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/UpdateRoomCount.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/UpdateRoomCountResponse.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/UpdateRoomResponse.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/IProg.iml" afterPath="$PROJECT_DIR$/IProg.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hotel/entity/Hotel.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/entity/Hotel.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hotel/entity/Renter.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/entity/Renter.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hotel/entity/Room.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/entity/Room.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parser/HotelMarshaller.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/HotelMarshaller.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parser/HotelUnmarshaller.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/HotelUnmarshaller.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parser/Util.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/Util.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parser/dom/DomMarshaller.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/dom/DomMarshaller.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parser/dom/DomUnmarshaller.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/dom/DomUnmarshaller.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/Client.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/Login.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/RoomServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/dao/DAOException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/dao/DAOFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/dao/RoomDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/dao/inmemory/InMemoryDAOFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/dao/inmemory/InMemoryRoomDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/AddRoom.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/AddRoomResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/DAOExceptionBean.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/DeleteRoom.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/DeleteRoomResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/GetRoom.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/GetRoomResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/ListRooms.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/ListRoomsResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/UpdateRoom.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/UpdateRoomCount.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/UpdateRoomCountResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/UpdateRoomResponse.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MainDemo.java" afterPath="$PROJECT_DIR$/src/main/java/MainDemo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/entity/Hotel.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/entity/Hotel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/entity/Renter.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/entity/Renter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/entity/Room.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/entity/Room.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/HotelMarshaller.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/HotelMarshaller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/HotelUnmarshaller.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/HotelUnmarshaller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/Util.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/Util.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/dom/DomMarshaller.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/dom/DomMarshaller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/dom/DomUnmarshaller.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/dom/DomUnmarshaller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/RoomService.java" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/RoomService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/xml/dom.xml" afterPath="$PROJECT_DIR$/src/main/resources/xml/dom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/xml/hotel.xml" afterPath="$PROJECT_DIR$/src/main/resources/xml/hotel.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/xsd/hotel.xsd" afterPath="$PROJECT_DIR$/src/main/resources/xsd/hotel.xsd" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,85 +52,128 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="IProg" />
+  </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="RoomService.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/RoomService.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="459">
-                  <caret line="37" column="35" lean-forward="false" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="35" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="RoomServiceImpl.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/RoomServiceImpl.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="13" column="44" lean-forward="false" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="BookServer.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../../mischerExample/ws/LB4jaxwsBookService/src/ua/nure/order/server/BookServer.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
-                  <caret line="8" column="7" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="23" selection-end-column="1" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MainDemo.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/MainDemo.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
-                  <caret line="6" column="69" lean-forward="false" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="BookServiceImpl.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../../mischerExample/ws/LB4jaxwsBookService/src/ua/nure/order/server/service/BookServiceImpl.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="14" column="62" lean-forward="false" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="BookServiceImpl.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/../../mischerExample/ws/LB4jaxwsBookService/src/ua/nure/order/server/service/BookServiceImpl.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="14" column="62" lean-forward="false" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="hotel.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/xml/hotel.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/xml/dom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hotel.xsd" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/xsd/hotel.xsd">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="34" column="54" lean-forward="false" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainDemo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/MainDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="7" column="75" lean-forward="false" selection-start-line="7" selection-start-column="75" selection-end-line="7" selection-end-column="75" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InMemoryRoomDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/dao/inmemory/InMemoryRoomDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="38" column="32" lean-forward="false" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="32" />
+              <folding>
+                <element signature="e#2642#2643#0" expanded="true" />
+                <element signature="e#2679#2680#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DomUnmarshaller.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/dom/DomUnmarshaller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="29" column="15" lean-forward="true" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RoomService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/RoomService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="36" column="34" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Room.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/entity/Room.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="109" column="36" lean-forward="true" selection-start-line="109" selection-start-column="36" selection-end-line="109" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Renter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/entity/Renter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="833">
+              <caret line="67" column="22" lean-forward="false" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DomMarshaller.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/dom/DomMarshaller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="33" column="76" lean-forward="false" selection-start-line="33" selection-start-column="76" selection-end-line="33" selection-end-column="76" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -146,6 +195,16 @@
       <find>order.server.</find>
       <find>server.service.RoomService</find>
       <find>service</find>
+      <find>ua.nure.zabara.server.order.nure.ua</find>
+      <find>http://service.ua.nure.zabara.server.order.nure.ua/</find>
+      <find>http://</find>
+      <find>Пуе</find>
+      <find>getRoomsFromBusinessLayer</find>
+      <find>ua.nure.order.</find>
+      <find>Action</find>
+      <find>Order</find>
+      <find>getRooms</find>
+      <find>print</find>
     </findStrings>
     <dirStrings>
       <dir>D:\учёба\4курс\labsUniversity\IProg\src\main\java\server</dir>
@@ -169,50 +228,72 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/IProg.iml" />
-        <option value="$PROJECT_DIR$/src/main/java/services/Client.java" />
-        <option value="$PROJECT_DIR$/src/main/java/services/Server.java" />
-        <option value="$PROJECT_DIR$/src/main/java/services/jaxws/AddBook.java" />
-        <option value="$PROJECT_DIR$/src/main/java/services/jaxws/AddBookResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/services/jaxws/DeleteBook.java" />
-        <option value="$PROJECT_DIR$/src/main/java/services/jaxws/DeleteRoom.java" />
-        <option value="$PROJECT_DIR$/src/main/java/services/jaxws/DeleteBookResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/services/jaxws/GetBook.java" />
-        <option value="$PROJECT_DIR$/src/main/java/services/jaxws/GetBookResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/services/jaxws/ListBooks.java" />
-        <option value="$PROJECT_DIR$/src/main/java/services/jaxws/ListRooms.java" />
-        <option value="$PROJECT_DIR$/src/main/java/services/jaxws/UpdateBook.java" />
-        <option value="$PROJECT_DIR$/src/main/java/services/jaxws/UpdateBookCount.java" />
-        <option value="$PROJECT_DIR$/src/main/java/services/jaxws/UpdateBookResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/services/jaxws/UpdateBookCountResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/services/jaxws/ListBooksResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/services/BookService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/server/dao/BookDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/server/dao/inmemory/InMemoryDAOFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/server/BookService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/parser/Util.java" />
-        <option value="$PROJECT_DIR$/src/main/java/server/dao/RoomDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/server/dao/inmemory/InMemoryBookDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/server/dao/DAOFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/server/Server.java" />
-        <option value="$PROJECT_DIR$/../../mischerExample/ws/ws/WebContent/wsdl/bookserviceimpl.wsdl" />
-        <option value="$PROJECT_DIR$/WebContent/wsdl/roomserviceimpl_schema2.xsd" />
-        <option value="$PROJECT_DIR$/WebContent/WEB-INF/cxf-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/java/parser/dom/DomMarshaller.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/BookServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/RoomService.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/dao/inmemory/InMemoryRoomDAO.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/web/WEB-INF/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/server/Login.java" />
         <option value="$PROJECT_DIR$/src/main/web/WEB-INF/index.html" />
         <option value="$PROJECT_DIR$/src/main/web/WEB-INF/cxf-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/java/server/RoomServiceImpl.java" />
+        <option value="$PROJECT_DIR$/glassfishpasswordfile" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/HotelUnmarshaller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/HotelMarshaller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/dao/inmemory/InMemoryDAOFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/dao/DAOException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/dao/RoomDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/AddRoomResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/DeleteRoom.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/DeleteRoomResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/UpdateRoom.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/UpdateRoomCount.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/UpdateRoomCountResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/dao/DAOFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/Util.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/AddRoom.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/UpdateRoomResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/DAOExceptionBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/GetRoomResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/Login.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/ListRoomsResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/GetRoom.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/ListRooms.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/XMLMetadata.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/business/TS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/entity/Hotel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/business/TaxiBusinessService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/business/TaxiService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/business/HotelService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/welcome.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/RoomServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/MainDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/dom/DomMarshaller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/RoomService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/dao/inmemory/InMemoryRoomDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/xml/hotel.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/xsd/hotel.xsd" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/dom/DomUnmarshaller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/entity/Renter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/nure/zabara/entity/Room.java" />
       </list>
     </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -254,8 +335,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="961" />
+    <option name="x" value="713" />
+    <option name="width" value="660" />
     <option name="height" value="775" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -298,9 +379,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -341,18 +421,91 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="zabara" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IProg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IProg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zabara" type="462c0819:PsiDirectoryNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IProg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IProg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zabara" type="462c0819:PsiDirectoryNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+              <item name="dom" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IProg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IProg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zabara" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IProg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IProg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zabara" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IProg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IProg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zabara" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="inmemory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IProg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IProg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IProg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IProg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="xml" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IProg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IProg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="xsd" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/xService" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -361,16 +514,22 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="server.dao.inmemory" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\учёба\4курс\labsUniversity\IProg\src\main\java\ua\nure\zabara\business" />
       <recent name="D:\учёба\4курс\labsUniversity\IProg" />
       <recent name="D:\учёба\4курс\labsUniversity\IProg\src\main\java\server\dao\inmemory" />
       <recent name="D:\учёба\4курс\labsUniversity\IProg\src\main\java\server\dao" />
       <recent name="D:\учёба\4курс\labsUniversity\IProg\src\main\java\services" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ua.nure.zabara.parser" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\учёба\4курс\labsUniversity\IProg\src\main" />
@@ -391,12 +550,24 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.MainDemo">
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
+    <configuration name="DomUnmarshaller" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ua.nure.zabara.parser.dom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ua.nure.zabara.parser.dom.DomUnmarshaller" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="IProg" />
+      <envs />
     </configuration>
     <configuration name="MainDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -411,6 +582,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="IProg" />
       <envs />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -446,28 +624,11 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="Tomcat" type="MavenRunConfiguration" factoryName="Maven">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="tomcat7:run" />
-              </list>
-            </option>
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
@@ -503,19 +664,87 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
+    <configuration name="tomcat " type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.73" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="IProg:Web exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_IProg" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="50365" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="IProg:Web exploded" />
+        </option>
+      </method>
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Maven.Tomcat" />
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.tomcat " />
       <item index="1" class="java.lang.String" itemvalue="Application.MainDemo" />
+      <item index="2" class="java.lang.String" itemvalue="Application.DomUnmarshaller" />
     </list>
     <recent_temporary>
-      <list size="1">
+      <list size="2">
         <item index="0" class="java.lang.String" itemvalue="Application.MainDemo" />
+        <item index="1" class="java.lang.String" itemvalue="Application.DomUnmarshaller" />
       </list>
     </recent_temporary>
   </component>
@@ -532,42 +761,86 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1511615404891</updated>
+      <workItem from="1512827182673" duration="463000" />
+      <workItem from="1512828288371" duration="2207000" />
+      <workItem from="1512833720616" duration="8844000" />
+      <workItem from="1512902575578" duration="762000" />
+      <workItem from="1512923214290" duration="1242000" />
+      <workItem from="1512932231726" duration="9468000" />
+      <workItem from="1513021295106" duration="5838000" />
+      <workItem from="1513107924120" duration="11144000" />
+      <workItem from="1513120019768" duration="119000" />
     </task>
+    <task id="LOCAL-00001" summary="push for remote access">
+      <created>1512511506405</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1512511506405</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="40087000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25222552" sideWeight="0.38360175" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44325152" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3169643" sideWeight="0.6163982" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25718608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23352855" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.398773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23809524" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="push for remote access" />
+    <option name="LAST_COMMIT_MESSAGE" value="push for remote access" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -580,298 +853,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/GetRoom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../mischerExample/ws/ws/src/ua/nure/order/entity/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/GetRoomResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/ListRooms.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../mischerExample/ws/ws/WebContent/wsdl/bookserviceimpl_schema1.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/wsdl/roomserviceimpl_schema2.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/dom/DomMarshaller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="30" column="46" lean-forward="false" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/dao/RoomDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/javax/javaee-web-api/6.0/javaee-web-api-6.0.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/entity/Hotel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/dom/DomUnmarshaller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/dao/DAOException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/roomserviceimpl.wsdl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="44" lean-forward="false" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/dao/inmemory/InMemoryDAOFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/dao/DAOFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/dao/inmemory/InMemoryRoomDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="58" column="9" lean-forward="false" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/wsdl/roomserviceimpl_schema1.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="34" column="35" lean-forward="false" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/WEB-INF/index.jsp" />
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/7.0/javaee-api-7.0.jar!/javax/servlet/GenericServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-667">
-          <caret line="12" column="70" lean-forward="false" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/7.0/javaee-api-7.0.jar!/javax/servlet/http/HttpServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="56" lean-forward="false" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/AddRoomResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="11" lean-forward="false" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/DAOExceptionBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/AddRoom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../mischerExample/ws/ws/src/ua/nure/order/server/service/BookService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-450">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../mischerExample/ws/ws/test/ua/nure/order/server/dao/BookDAOInMemoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../mischerExample/ws/ws/src/ua/nure/order/server/service/BookServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="36" column="15" lean-forward="true" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../mischerExample/ws/ws/WebContent/wsdl/bookserviceimpl.wsdl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="47" lean-forward="false" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../mischerExample/ws/ws/src/ua/nure/order/server/shared/Validator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../mischerExample/ws/ws/src/ua/nure/order/server/shared/UserValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/wsdl/roomserviceimpl.wsdl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-827">
-          <caret line="115" column="59" lean-forward="false" selection-start-line="115" selection-start-column="55" selection-end-line="115" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/META-INF/context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="44" column="62" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/WEB-INF/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/net/URLClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="380" column="0" lean-forward="false" selection-start-line="380" selection-start-column="0" selection-end-line="380" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/lang/ClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-476">
-          <caret line="423" column="0" lean-forward="false" selection-start-line="423" selection-start-column="0" selection-end-line="423" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/7.0/javaee-api-7.0.jar!/javax/ws/rs/Path.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/7.0/javaee-api-7.0.jar!/javax/ws/rs/core/Application.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -893,14 +874,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../mischerExample/ws/LB4jaxwsBookService/src/ua/nure/order/server/BookServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="7" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="23" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/jre/lib/rt.jar!/com/sun/xml/internal/ws/model/RuntimeModeler.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -908,49 +881,219 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/web/WEB-INF/cxf-servlet.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/web/WEB-INF/cxf-servlet.xml" />
+    <entry file="file://$PROJECT_DIR$/../../mischerExample/ws/LB4jaxwsBookService/src/ua/nure/order/server/service/BookServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+        <state relative-caret-position="119">
+          <caret line="14" column="62" lean-forward="false" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../mischerExample/ws/LB4jaxwsBookService/src/ua/nure/order/server/BookServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/dao/DAOException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IProg.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glassfishpasswordfile" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/DAOExceptionBean.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/AddRoom.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/AddRoomResponse.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/DeleteRoom.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/DeleteRoomResponse.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/UpdateRoomCountResponse.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/Client.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/Login.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/jre/lib/rt.jar!/com/sun/xml/internal/ws/transport/http/server/EndpointImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/UpdateRoomCount.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/ListRoomsResponse.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/ListRooms.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/XMLMetadata.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/business.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/entity/Hotel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="45" column="5" lean-forward="false" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/UpdateRoom.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/GetRoomResponse.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/GetRoom.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/jaxws/UpdateRoomResponse.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/business/HotelBusinessService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/business/HotelService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/business/HS.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/RoomService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/welcome.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/dao/inmemory/InMemoryDAOFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/dao/DAOFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/dao/RoomDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="15" lean-forward="false" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/HotelUnmarshaller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/HotelMarshaller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/dao/inmemory/InMemoryRoomDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="38" column="32" lean-forward="false" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="32" />
+          <folding>
+            <element signature="e#2642#2643#0" expanded="true" />
+            <element signature="e#2679#2680#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/xsd/hotel.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="54" lean-forward="false" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/xml/dom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/entity/Renter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="67" column="22" lean-forward="false" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/RoomService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="37" column="35" lean-forward="false" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="35" />
+        <state relative-caret-position="476">
+          <caret line="36" column="34" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MainDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="69" lean-forward="false" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="7" column="75" lean-forward="false" selection-start-line="7" selection-start-column="75" selection-end-line="7" selection-end-column="75" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../mischerExample/ws/LB4jaxwsBookService/src/ua/nure/order/server/service/BookServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/dom/DomMarshaller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="62" lean-forward="false" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="33" column="76" lean-forward="false" selection-start-line="33" selection-start-column="76" selection-end-line="33" selection-end-column="76" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/server/RoomServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/parser/dom/DomUnmarshaller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="44" lean-forward="false" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="29" column="15" lean-forward="true" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/nure/zabara/entity/Room.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="109" column="36" lean-forward="true" selection-start-line="109" selection-start-column="36" selection-end-line="109" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/xml/hotel.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -960,11 +1103,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>unnamed</last-edited>
+          <last-edited>IProg:Web exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -972,7 +1116,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1007,12 +1151,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>IProg</last-edited>
+          <last-edited>Web|IProg</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

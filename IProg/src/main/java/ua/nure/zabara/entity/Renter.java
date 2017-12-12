@@ -1,12 +1,11 @@
-package hotel.entity;
+package ua.nure.zabara.entity;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
 import java.sql.Date;
 import java.util.Objects;
-
-@XmlAccessorType(XmlAccessType.FIELD)
+    @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "Renter", propOrder = {
         "name",
         "telNumber",
@@ -16,15 +15,8 @@ import java.util.Objects;
 public class Renter {
     private String name;
     private String telNumber;
-    private Date startDate;
-    private Date endDate;
-
-    public Renter(String name, String telNumber, Date startDate, Date endDate) {
-        this.name = name;
-        this.telNumber = telNumber;
-        this.startDate = startDate;
-        this.endDate = endDate;
-    }
+    private long dateStart;
+    private long dateEnd;
 
     public String getName() {
         return name;
@@ -42,20 +34,20 @@ public class Renter {
         this.telNumber = telNumber;
     }
 
-    public Date getStartDate() {
-        return startDate;
+    public long getDateStart() {
+        return dateStart;
     }
 
-    public void setStartDate(Date startDate) {
-        this.startDate = startDate;
+    public void setDateStart(Date dateStart) {
+        this.dateStart = dateStart.getTime();
     }
 
-    public Date getEndDate() {
-        return endDate;
+    public long getDateEnd() {
+        return dateEnd;
     }
 
-    public void setEndDate(Date endDate) {
-        this.endDate = endDate;
+    public void setDateEnd(Date dateEnd) {
+        this.dateEnd = dateEnd.getTime()     ;
     }
 
     @Override
@@ -63,12 +55,22 @@ public class Renter {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Renter renter = (Renter) o;
-        return Objects.equals(startDate, renter.startDate) &&
-                Objects.equals(endDate, renter.endDate);
+        return Objects.equals(dateStart, renter.dateStart) &&
+                Objects.equals(dateEnd, renter.dateEnd);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(startDate, endDate);
+        return Objects.hash(dateStart, dateEnd);
     }
-}
+
+        @Override
+        public String toString() {
+            return "Renter{" +
+                    "name='" + name + '\'' +
+                    ", telNumber='" + telNumber + '\'' +
+                    ", dateStart=" + dateStart +
+                    ", dateEnd=" + dateEnd +
+                    '}';
+        }
+    }

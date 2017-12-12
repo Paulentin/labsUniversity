@@ -1,13 +1,13 @@
-package parser.dom;
+package ua.nure.zabara.parser.dom;
 
-import hotel.entity.Hotel;
-import hotel.entity.Renter;
-import hotel.entity.Room;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import parser.HotelUnmarshaller;
+import ua.nure.zabara.entity.Hotel;
+import ua.nure.zabara.entity.Renter;
+import ua.nure.zabara.entity.Room;
+import ua.nure.zabara.parser.HotelUnmarshaller;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -27,8 +27,8 @@ public class DomUnmarshaller implements HotelUnmarshaller {
     public static void main(String[] arg) {
         HotelUnmarshaller parser = new DomUnmarshaller();
         Hotel hotel = parser.unmarshal("src/main/resources/xml/hotel.xml");
-        for (Room room : hotel.getRoomSet()) {
-            System.out.println("Room: " + room.getId() + " " + "Stars: " + room.getStars() + " Price:" + room.getPrice());
+        for (Room room : hotel.getRooms()) {
+            System.out.println(room);
         }
     }
 
@@ -48,7 +48,7 @@ public class DomUnmarshaller implements HotelUnmarshaller {
                         if (roomNodeList.item(i).getNodeType() == Node.ELEMENT_NODE) {
                             Room room = parseRoom((Element) roomNodeList.item(i));
                             if (room != null) {
-                                hotel.getRoomSet().add(room);
+                                hotel.getRooms().add(room);
                             }
                         }
                     }
@@ -64,7 +64,7 @@ public class DomUnmarshaller implements HotelUnmarshaller {
         Room room = new Room();
         room.setId(Integer.parseInt(roomElement.getAttribute("id")));
 
-        room.getWhorent().addAll(getRentors(roomElement, "rented"));
+        room.getRented().addAll(getRentors(roomElement, "rented"));
 
         room.setStars(
                 Integer.parseInt(
@@ -72,9 +72,8 @@ public class DomUnmarshaller implements HotelUnmarshaller {
         room.setStaffAmount(
                 Integer.parseInt(
                         getValue(roomElement, "staffAmount")));
-        room.setBarFridge(
-                Boolean.getBoolean(
-                        getValue(roomElement, "barFridge")));
+        room.setBarfridge(
+                getValueBar(roomElement, "barFridge"));
         room.setPrice(
                 BigDecimal.valueOf(
                         Double.parseDouble(
@@ -89,12 +88,12 @@ public class DomUnmarshaller implements HotelUnmarshaller {
         for (int i = 0; i < elements.getLength(); i++) {
             Node node = elements.item(i);
             if (node != null) {
-                renters.add(
-                        new Renter(
-                                getValue(parent, "name"),
-                                getValue(parent, "telNumber"),
-                                Date.valueOf(getValue(parent, "dateStart")),
-                                Date.valueOf(getValue(parent, "dateEnd"))));
+                Renter renterToAdd = new Renter();
+                renterToAdd.setName(getValue(parent, "name"));
+                renterToAdd.setTelNumber(getValue(parent, "telNumber"));
+                renterToAdd.setDateStart(Date.valueOf(getValue(parent, "dateStart")));
+                renterToAdd.setDateEnd(Date.valueOf(getValue(parent, "dateEnd")));
+                renters.add(renterToAdd);
             }
         }
         return renters;
@@ -115,7 +114,19 @@ public class DomUnmarshaller implements HotelUnmarshaller {
     }
 
     private String getValue(Element parent, String nodeName) {
-        return getValues(parent, nodeName).get(0);
+        List<String> str = getValues(parent, nodeName);
+        return str.get(0);
+    }
+
+    private String getValueBar(Element roomElement, String barFridge) {
+        NodeList elements = roomElement.getElementsByTagNameNS(BS_NS, barFridge);
+        for (int i = 0; i < elements.getLength(); i++) {
+            Node node = elements.item(i);
+            if (node != null) {
+                return node.getTextContent();
+            }
+        }
+        return null;
     }
 }
 

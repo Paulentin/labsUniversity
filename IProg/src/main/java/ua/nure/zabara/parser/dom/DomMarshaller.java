@@ -1,13 +1,13 @@
-package parser.dom;
+package ua.nure.zabara.parser.dom;
 
-import hotel.entity.Hotel;
-import hotel.entity.Renter;
-import hotel.entity.Room;
+import ua.nure.zabara.entity.Hotel;
+import ua.nure.zabara.entity.Renter;
+import ua.nure.zabara.entity.Room;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.xml.sax.SAXException;
-import parser.HotelMarshaller;
-import parser.Util;
+import ua.nure.zabara.parser.HotelMarshaller;
+import ua.nure.zabara.parser.Util;
 
 import javax.xml.XMLConstants;
 import javax.xml.parsers.DocumentBuilder;
@@ -22,6 +22,7 @@ import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import java.io.File;
 import java.io.IOException;
+import java.sql.Date;
 
 
 public class DomMarshaller implements HotelMarshaller {
@@ -56,7 +57,7 @@ public class DomMarshaller implements HotelMarshaller {
             Element hotelElement = doc.createElementNS(BS_NS, "hotel");
             doc.appendChild(hotelElement);
 
-            hotel.getRoomSet().forEach(room -> hotelElement.appendChild(getRoomElement(room, doc)));
+            hotel.getRooms().forEach(room -> hotelElement.appendChild(getRoomElement(room, doc)));
 
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = transformerFactory.newTransformer();
@@ -73,10 +74,10 @@ public class DomMarshaller implements HotelMarshaller {
     private Element getRoomElement(Room room, Document doc) {
         Element roomOfHotel = doc.createElementNS(BS_NS, "room");
         roomOfHotel.setAttribute("id", String.valueOf(room.getId()));
-        room.getWhorent().forEach(renter -> roomOfHotel.appendChild(getRenterElement(renter, doc)));
+        room.getRented().forEach(renter -> roomOfHotel.appendChild(getRenterElement(renter, doc)));
         roomOfHotel.appendChild(getSimpleElement(doc, BS_NS, "stars", room.getStars()));
         roomOfHotel.appendChild(getSimpleElement(doc, BS_NS, "staffAmount", room.getStaffAmount()));
-        roomOfHotel.appendChild(getSimpleElement(doc, BS_NS, "barFridge", room.isBarFridge()));
+        roomOfHotel.appendChild(getSimpleElement(doc, BS_NS, "barFridge", room.isBarfridge()));
         Double d = 0.0;
         if (room.getPrice() != null) {
             d = room.getPrice().doubleValue();
@@ -95,8 +96,8 @@ public class DomMarshaller implements HotelMarshaller {
         Element renterOfRoom = doc.createElementNS(BS_NS, "rented");
         renterOfRoom.appendChild(getSimpleElement(doc, BS_NS, "name", renter.getName()));
         renterOfRoom.appendChild(getSimpleElement(doc, BS_NS, "telNumber", renter.getTelNumber()));
-        renterOfRoom.appendChild(getSimpleElement(doc, BS_NS, "dateStart", renter.getStartDate().toLocalDate()));
-        renterOfRoom.appendChild(getSimpleElement(doc, BS_NS, "dateEnd", renter.getEndDate()));
+        renterOfRoom.appendChild(getSimpleElement(doc, BS_NS, "dateStart", new Date(renter.getDateStart())));
+        renterOfRoom.appendChild(getSimpleElement(doc, BS_NS, "dateEnd", renter.getDateEnd()));
 
         return renterOfRoom;
     }
