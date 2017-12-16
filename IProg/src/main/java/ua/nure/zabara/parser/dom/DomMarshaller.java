@@ -1,11 +1,11 @@
 package ua.nure.zabara.parser.dom;
 
-import ua.nure.zabara.entity.Hotel;
-import ua.nure.zabara.entity.Renter;
-import ua.nure.zabara.entity.Room;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.xml.sax.SAXException;
+import ua.nure.zabara.entity.Hotel;
+import ua.nure.zabara.entity.Renter;
+import ua.nure.zabara.entity.Room;
 import ua.nure.zabara.parser.HotelMarshaller;
 import ua.nure.zabara.parser.Util;
 
@@ -77,7 +77,7 @@ public class DomMarshaller implements HotelMarshaller {
         room.getRented().forEach(renter -> roomOfHotel.appendChild(getRenterElement(renter, doc)));
         roomOfHotel.appendChild(getSimpleElement(doc, BS_NS, "stars", room.getStars()));
         roomOfHotel.appendChild(getSimpleElement(doc, BS_NS, "staffAmount", room.getStaffAmount()));
-        roomOfHotel.appendChild(getSimpleElement(doc, BS_NS, "barFridge", room.isBarfridge()));
+        roomOfHotel.appendChild(getSimpleElement(doc, BS_NS, "barFridge", room.isBarfridge() == null ? false : true));
         Double d = 0.0;
         if (room.getPrice() != null) {
             d = room.getPrice().doubleValue();
@@ -97,7 +97,7 @@ public class DomMarshaller implements HotelMarshaller {
         renterOfRoom.appendChild(getSimpleElement(doc, BS_NS, "name", renter.getName()));
         renterOfRoom.appendChild(getSimpleElement(doc, BS_NS, "telNumber", renter.getTelNumber()));
         renterOfRoom.appendChild(getSimpleElement(doc, BS_NS, "dateStart", new Date(renter.getDateStart())));
-        renterOfRoom.appendChild(getSimpleElement(doc, BS_NS, "dateEnd", renter.getDateEnd()));
+        renterOfRoom.appendChild(getSimpleElement(doc, BS_NS, "dateEnd", new Date(renter.getDateEnd())));
 
         return renterOfRoom;
     }

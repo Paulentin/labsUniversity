@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 
 @SuppressWarnings("serial")
@@ -26,7 +27,6 @@ public class RoomsListServlet extends HttpServlet {
         try {
             service = new RoomServiceClient(new URL("http://localhost:9000/RoomService?wsdl"));
             client = service.getProductServicePort();
-
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
@@ -37,9 +37,9 @@ public class RoomsListServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         ArrayList<Room> resultList = (ArrayList<Room>) client.getRoomsFromBusinessLayer();
-        Collections.sort(resultList, (order1, order2) -> order1.getId() - order2.getId());
-        req.setAttribute("orders", resultList);
-        RequestDispatcher rd = getServletContext().getRequestDispatcher("/rooms.jsp");
+
+        req.setAttribute("rooms", resultList);
+        RequestDispatcher rd = getServletContext().getRequestDispatcher("/list.jsp");
         rd.forward(req, resp);
     }
 

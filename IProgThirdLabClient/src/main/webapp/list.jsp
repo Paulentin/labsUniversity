@@ -11,8 +11,8 @@
 <body>
 	<jsp:include page="jspf/head.jspf"></jsp:include>
  	<c:choose>
- 	<c:when test="${empty books }">
-		<h2>No books found</h2>
+ 	<c:when test="${empty rooms}">
+		<h2>No rooms found</h2>
  	</c:when>
 	<c:otherwise>
 	<table class="brd">
@@ -24,32 +24,27 @@
 		<colcolgroup class="right"/>
 		<colcolgroup class="left"/>
 		<tr>
-			<th class="brd">Title</th>
-			<th class="brd">Authors</th>
-			<th class="brd">ISBN</th>
+			<th class="brd">ID</th>
+			<th class="brd">Rentors</th>
 			<th class="brd">Price</th>
-			<th class="brd">Count</th>
-			<th class="brd">Action</th>
+			<th class="brd">Stars</th>
+			<th class="brd">Staff amount</th>
 		</tr>
 	</thead>
 	<tbody>
-	<c:forEach var="book" items="${books }">
+	<c:forEach var="room" items="${rooms}">
 		<tr>
-			<td class="brd">${book.title }</td>
+			<td class="brd">${room.id}</td>
 			<td class="brd">
 			<ul>
-			<c:forEach var="author" items="${book.author }">
-				<li>${author }</li>
+			<c:forEach var="renter" items="${room.rented}">
+				<li>${renter.name}</li>
 			</c:forEach>
 			</ul>
 			</td>
-			<td class="brd">${book.isbn }</td>
-			<td class="brd right">${book.price }</td>
-			<td class="brd right">${book.count }</td>
-			<td class="brd"><form action="delete" method="post">
-				<input type="hidden" name="id" value="${book.id }">
-				<input type="submit" value="Delete">
-			</form> </td>
+			<td class="brd">${room.price}</td>
+			<td class="brd right">${room.stars}</td>
+			<td class="brd right">${room.staffamount}</td>
 		</tr>
 	</c:forEach>
 	</tbody>

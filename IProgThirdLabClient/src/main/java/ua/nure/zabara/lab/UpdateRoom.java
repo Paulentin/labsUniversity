@@ -3,7 +3,7 @@ package ua.nure.zabara.lab;
 
 import ua.nure.zabara.hotel_itpoi.Room;
 
-import javax.persistence.criteria.Order;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;

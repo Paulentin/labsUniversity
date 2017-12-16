@@ -1,59 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns="http://nure.ua/zabara/hotel"
-       xsi:schemaLocation="http://nure.ua/zabara/hotel /xsd/hotel.xsd">
-
-    <room id="1">
-        <stars>3</stars>
-        <staffAmount>2</staffAmount>
-        <barfridge>true</barfridge>
-        <price>220</price>
-    </room>
-
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<hotel xmlns="http://nure.ua/zabara/hotel">
     <room id="3">
         <rented>
-            <name>Lyuda Vasilina</name>
-            <telNumber>+380992329830</telNumber>
-            <dateStart>2014-10-02</dateStart>
-            <dateEnd>2012-10-22</dateEnd>
+            <name>Pavlo Zabara</name>
+            <telNumber>+380660219830</telNumber>
+            <dateStart>1970-01-01</dateStart>
+            <dateEnd>-7200000</dateEnd>
         </rented>
-        <rented>
-            <name>Sergey Lihachov</name>
-            <telNumber>+380509856546</telNumber>
-            <dateStart>2014-10-25</dateStart>
-            <dateEnd>2014-11-02</dateEnd>
-        </rented>
-        <stars>3</stars>
-        <staffAmount>1</staffAmount>
-        <barfridge>true</barfridge>
-        <price>220</price>
+        <stars>5</stars>
+        <staffAmount>2</staffAmount>
+        <barFridge>null</barFridge>
+        <price>0.0</price>
     </room>
-
-    <room id="5">
+    <room id="1">
         <rented>
-            <name>Lyuda Semenova</name>
-            <telNumber>+380992329830</telNumber>
-            <dateStart>2014-10-02</dateStart>
-            <dateEnd>2012-10-22</dateEnd>
+            <name>Vasya</name>
+            <telNumber>+380660219830</telNumber>
+            <dateStart>1970-01-01</dateStart>
+            <dateEnd>5656989</dateEnd>
         </rented>
-        <rented>
-            <name>Dmitriy Lihachov</name>
-            <telNumber>+380509856546</telNumber>
-            <dateStart>2014-10-25</dateStart>
-            <dateEnd>2014-11-02</dateEnd>
-        </rented>
+        <stars>5</stars>
+        <staffAmount>0</staffAmount>
+        <barFridge>true</barFridge>
+        <price>5665.0</price>
+    </room>
+    <room id="2">
         <stars>3</stars>
         <staffAmount>2</staffAmount>
-        <barfridge>true</barfridge>
-        <price>240</price>
+        <barFridge>null</barFridge>
+        <price>0.0</price>
     </room>
-
-    <room id="4">
-        <stars>3</stars>
-        <staffAmount>2</staffAmount>
-        <barfridge>true</barfridge>
-        <price>320</price>
-    </room>
-
 </hotel>

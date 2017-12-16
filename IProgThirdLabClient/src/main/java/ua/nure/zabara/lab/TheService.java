@@ -69,22 +69,6 @@ public interface TheService {
             @WebParam(name = "arg0", targetNamespace = "")
                     int arg0);
 
-    /**
-     * @param arg0
-     * @return returns java.util.List<org.example.ua.nure.zabara.hotel_itpoi.Room>
-     */
-//    @WebMethod
-//    @WebResult(targetNamespace = "")
-////    @RequestWrapper(localName = "getRoomsByFilterFromBusinessLayer", targetNamespace = "http://server.zabara.nure.ua/", className = "ua.nure.zabara.lab.GetRoomsByFilterFromBusinessLayer")
-//    @ResponseWrapper(localName = "getRoomsByFilterFromBusinessLayerResponse", targetNamespace = "http://server.zabara.nure.ua/", className = "ua.nure.zabara.lab.GetRoomsByFilterFromBusinessLayerResponse")
-//    @Action(input = "http://server.zabara.nure.ua/RoomService/getRoomsByFilterFromBusinessLayerRequest", output = "http://server.zabara.nure.ua/RoomService/getRoomsByFilterFromBusinessLayerResponse")
-//    public List<Room> getRoomsByFilterFromBusinessLayer(
-//            @WebParam(name = "arg0", targetNamespace = "")
-//                    String arg0);
-
-    /**
-     * @return returns java.util.List<org.example.ua.nure.zabara.hotel_itpoi.Room>
-     */
     @WebMethod
     @WebResult(targetNamespace = "")
     @RequestWrapper(localName = "getRoomsFromBusinessLayer", targetNamespace = "http://server.zabara.nure.ua/", className = "ua.nure.zabara.lab.GetRoomsFromBusiness")

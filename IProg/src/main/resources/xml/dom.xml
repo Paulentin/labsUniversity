@@ -3,13 +3,13 @@
     <room id="1">
         <stars>5</stars>
         <staffAmount>3</staffAmount>
-        <barfridge>false</barfridge>
+        <barFridge>false</barFridge>
         <price>0.0</price>
     </room>
     <room id="2">
         <stars>3</stars>
         <staffAmount>2</staffAmount>
-        <barfridge>false</barfridge>
+        <barFridge>false</barFridge>
         <price>0.0</price>
     </room>
     <room id="3">
@@ -21,7 +21,7 @@
         </rented>
         <stars>5</stars>
         <staffAmount>2</staffAmount>
-        <barfridge>false</barfridge>
+        <barFridge>false</barFridge>
         <price>0.0</price>
     </room>
 </hotel>

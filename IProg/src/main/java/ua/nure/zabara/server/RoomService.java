@@ -31,7 +31,6 @@ public class RoomService {
         return rooms;
     }
 
-
     @WebMethod
     public Room addRoom(Room room) throws DAOException {
         room.setId(roomDao.addRoom(room));
